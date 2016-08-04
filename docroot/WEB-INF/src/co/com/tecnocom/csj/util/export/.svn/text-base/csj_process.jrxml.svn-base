@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="csj_process" pageWidth="612" pageHeight="792" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="be387d74-efcf-4083-aebd-3e7e7b176e03">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#DDDDDD">
+		<box>
+			<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<topPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<leftPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<rightPen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#F2F2F2">
+		<box>
+			<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<topPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<leftPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<rightPen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#F2F2F2">
+		<box>
+			<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<topPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<leftPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<rightPen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<subDataset name="ProcessSubjectsDataset" uuid="a2bdc336-bed1-494a-93e6-e4fa76b5dfaf">
+		<field name="ProcessSubject" class="java.lang.String">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="CSJ_ProcessCode" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CSJ_ProcessCity" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CSJ_ProcessSpecialty" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CSJ_ProcessCorporation" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CSJ_ProcessPerson" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CSJ_QueryDate" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CSJ_ProcessSubjects0001" class="java.util.List" isForPrompting="false"/>
+	<parameter name="CSJ_ProcessSubjects0002" class="java.util.List" isForPrompting="false"/>
+	<parameter name="CSJ_ActuacionDespacho" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CSJ_AnotacionDespacho" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CSJ_FechaDespacho" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CSJ_ActuacionSecretaria" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CSJ_AnotacionSecretaria" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CSJ_FechaSecretaria" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CSJ_FechaInicialSecretaria" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CSJ_FechaFinalSecretaria" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band height="792" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="612" height="792" backcolor="#006DCA" uuid="b9139c2c-1fc6-4246-bc48-ad6791feccd0"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</background>
+	<pageHeader>
+		<band height="92" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="10" y="10" width="592" height="66" backcolor="#F8F8F8" uuid="c66ea5ab-a34d-4b6e-bafc-ec1b5002bfcf"/>
+				<box leftPadding="0"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="20" y="18" width="50" height="50" uuid="bc974c18-5f05-4886-a691-63021b947cc5"/>
+				<imageExpression><![CDATA["E:/portal_repository/data/process_queries/site_logo.png"]]></imageExpression>
+				<!-- <imageExpression><![CDATA["C:/Software/Jaspersoft Studio-5.5.0.final/JaspersoftWorkspace/CSJ/site_logo.png"]]></imageExpression> -->
+			</image>
+			<staticText>
+				<reportElement x="100" y="29" width="490" height="28" forecolor="#006DCA" uuid="5e5cecc9-7dae-4317-a66a-d659477678e3"/>
+				<textElement>
+					<font fontName="SansSerif" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rama Judicial del Poder Público]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="400" y="60" width="190" height="14" uuid="44f32e87-2952-41ae-b8d6-4d4ba23bdb1f"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$P{CSJ_QueryDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="620" splitType="Stretch">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement mode="Opaque" x="10" y="0" width="592" height="620" backcolor="#FFFFFF" uuid="c66ea5ab-a34d-4b6e-bafc-ec1b5002bfcf"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="39" y="130" width="532" height="2" backcolor="#FFFFFF" uuid="c66ea5ab-a34d-4b6e-bafc-ec1b5002bfcf"/>
+				<box leftPadding="20" rightPadding="20">
+					<topPen lineWidth="1.0" lineStyle="Dashed"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="20" width="130" height="20" forecolor="#006DCA" uuid="2db81514-58ee-4cfd-a09e-63f70591bf83"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Número de referencia:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="200" y="20" width="370" height="20" uuid="51e14c7a-0b01-4f5d-b594-7aa9ab749898"/>
+				<textFieldExpression><![CDATA[$P{CSJ_ProcessCode}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="40" width="130" height="20" forecolor="#006DCA" uuid="613e08fc-c9ec-4b7e-860a-cf4b92366dda"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ciudad:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="200" y="40" width="370" height="20" uuid="9934e23c-bdc8-4298-b945-f9fa5cb1f40c"/>
+				<textFieldExpression><![CDATA[$P{CSJ_ProcessCity}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="60" width="130" height="20" forecolor="#006DCA" uuid="23f5a126-cfde-4a46-8a7e-9f93c2cac0c3"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Especialidad:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="200" y="60" width="370" height="20" uuid="5830fd38-4c81-4354-b085-590a2eae613f"/>
+				<textFieldExpression><![CDATA[$P{CSJ_ProcessSpecialty}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="41" y="80" width="130" height="20" forecolor="#006DCA" uuid="7b4d8733-9f72-4d53-8be3-5ac4353d34a6"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Corporación:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="200" y="80" width="370" height="20" uuid="3c0c6871-f6e6-48a7-887c-9d8526dc3ec7"/>
+				<textFieldExpression><![CDATA[$P{CSJ_ProcessCorporation}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="41" y="100" width="130" height="20" forecolor="#006DCA" uuid="e926f40f-4e4e-4363-910e-cb22a70c3af8"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre del Ponente:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="200" y="100" width="370" height="20" uuid="61fc1e2c-bffe-4738-bf8e-6d3f8421f90b"/>
+				<textFieldExpression><![CDATA[$P{CSJ_ProcessPerson}]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="40" y="140" width="533" height="60" backcolor="#FFFFFF" uuid="a12dedc5-e0ba-4f39-9d92-8c3b874b78ec"/>
+				<componentElement>
+					<reportElement x="0" y="0" width="266" height="60" uuid="8c4807e5-8b78-4a7c-ac7b-a9008b2adfc2"/>
+					<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+						<datasetRun subDataset="ProcessSubjectsDataset" uuid="2ba70330-bae6-4bfb-bd78-f57d6f133cad">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{CSJ_ProcessSubjects0002})]]></dataSourceExpression>
+						</datasetRun>
+						<jr:column width="266" uuid="e5632a74-9b5f-427e-8aab-be39326f1852">
+							<property name="local_mesure_unitheight" value="pixel"/>
+							<jr:tableHeader style="Table_TH" height="20">
+								<staticText>
+									<reportElement x="0" y="2" width="266" height="18" forecolor="#006DCA" uuid="449bc0a3-79f7-4cf6-83cc-bf287dae608d">
+										<property name="local_mesure_unitheight" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.height" value="px"/>
+									</reportElement>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font size="14"/>
+									</textElement>
+									<text><![CDATA[Demandados]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:detailCell style="Table_TD" height="40">
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement x="0" y="0" width="266" height="40" uuid="0dd0c8cb-af22-4980-addb-1b7835b3a8fd">
+										<property name="local_mesure_unitheight" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.height" value="px"/>
+									</reportElement>
+									<box topPadding="5" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+									<textFieldExpression><![CDATA[$F{ProcessSubject}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+					</jr:table>
+				</componentElement>
+				<componentElement>
+					<reportElement x="266" y="0" width="266" height="60" uuid="1b8ea6d9-8538-47b3-bd72-8393d7a036ec"/>
+					<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+						<datasetRun subDataset="ProcessSubjectsDataset" uuid="d7fe6f63-b20d-4722-9958-676b99e9d6b5">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{CSJ_ProcessSubjects0001})]]></dataSourceExpression>
+						</datasetRun>
+						<jr:column width="266" uuid="5c2e3b19-434a-4828-8302-64a97b7c0a40">
+							<property name="local_mesure_unitheight" value="pixel"/>
+							<jr:tableHeader style="Table_TH" height="20">
+								<staticText>
+									<reportElement x="0" y="2" width="264" height="18" forecolor="#006DCA" uuid="b18796e0-8306-4a0a-92a7-c040ef8b36dc">
+										<property name="local_mesure_unitheight" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.height" value="px"/>
+									</reportElement>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font size="14"/>
+									</textElement>
+									<text><![CDATA[Demandantes]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:detailCell style="Table_TD" height="40">
+								<textField isStretchWithOverflow="true">
+									<reportElement x="0" y="0" width="266" height="40" uuid="6bacc1e2-2c05-4674-94c6-a634c77146cb">
+										<property name="local_mesure_unitheight" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.height" value="px"/>
+									</reportElement>
+									<box topPadding="5" leftPadding="10" bottomPadding="0" rightPadding="10"/>
+									<textFieldExpression><![CDATA[$F{ProcessSubject}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+					</jr:table>
+				</componentElement>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="10" y="220" width="591" height="130" backcolor="#FFFFFF" uuid="a12dedc5-e0ba-4f39-9d92-8c3b874b78ec"/>
+				<staticText>
+					<reportElement x="31" y="0" width="531" height="20" forecolor="#006DCA" uuid="173f12b5-94c6-4568-92c2-013b7457b1bc"/>
+					<textElement>
+						<font size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Última actuación del despacho]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="31" y="30" width="130" height="20" forecolor="#006DCA" uuid="f6fc00f1-43cd-4a0c-8a5e-1f116e578620">
+						<printWhenExpression><![CDATA[$P{CSJ_ActuacionDespacho} != null]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Actuación:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="186" y="30" width="376" height="20" uuid="f6a64e4a-e190-4835-ae91-4165878f97ff"/>
+					<textFieldExpression><![CDATA[$P{CSJ_ActuacionDespacho}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="31" y="55" width="130" height="20" forecolor="#006DCA" uuid="84675120-52ff-4a28-989d-3be5b3124984">
+						<printWhenExpression><![CDATA[$P{CSJ_AnotacionDespacho} != null]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Anotación:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="186" y="55" width="376" height="50" uuid="71c0a570-3ee4-42b8-98e3-42adb3051d9a"/>
+					<textFieldExpression><![CDATA[$P{CSJ_AnotacionDespacho}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="31" y="110" width="130" height="20" forecolor="#006DCA" uuid="3aa70a75-bf87-4d75-a55b-5ef1462759fc">
+						<printWhenExpression><![CDATA[$P{CSJ_FechaDespacho} != null]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Fecha de la actuación:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="186" y="110" width="376" height="20" uuid="2c9fd251-2996-4e66-9758-a141787ebed7"/>
+					<textFieldExpression><![CDATA[$P{CSJ_FechaDespacho}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="10" y="360" width="591" height="250" backcolor="#FFFFFF" uuid="a12dedc5-e0ba-4f39-9d92-8c3b874b78ec"/>
+				<staticText>
+					<reportElement mode="Opaque" x="30" y="0" width="532" height="2" backcolor="#FFFFFF" uuid="c66ea5ab-a34d-4b6e-bafc-ec1b5002bfcf"/>
+					<box leftPadding="20" rightPadding="20">
+						<topPen lineWidth="1.0" lineStyle="Dashed"/>
+					</box>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="10" width="531" height="20" forecolor="#006DCA" uuid="97d0ce31-5c6c-4212-ad7a-d17590beb8c3"/>
+					<textElement>
+						<font size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Última actuación de la secretaría]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="40" width="130" height="20" forecolor="#006DCA" uuid="54d10454-8d73-4bce-bd20-38770cf00f36">
+						<printWhenExpression><![CDATA[$P{CSJ_ActuacionSecretaria} != null]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Actuación:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="185" y="40" width="376" height="20" uuid="c8169169-e242-49ae-abad-c320feb664f2"/>
+					<textFieldExpression><![CDATA[$P{CSJ_ActuacionSecretaria}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="30" y="65" width="130" height="20" forecolor="#006DCA" uuid="55e542fb-3ba4-4a10-bc64-c7d553dd6ea5">
+						<printWhenExpression><![CDATA[$P{CSJ_AnotacionSecretaria} != null]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Anotación:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="185" y="65" width="376" height="40" uuid="4f9e9b8b-3ddc-4ed1-b3e1-7c99fc4eebb5"/>
+					<textFieldExpression><![CDATA[$P{CSJ_AnotacionSecretaria}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="30" y="110" width="130" height="20" forecolor="#006DCA" uuid="f5e10f5e-60d2-4b6a-be84-07786e8aa64f">
+						<printWhenExpression><![CDATA[$P{CSJ_FechaSecretaria} != null]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Fecha de la actuación:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="185" y="110" width="376" height="20" uuid="846afd86-5488-4a48-98df-4229a956496d"/>
+					<textFieldExpression><![CDATA[$P{CSJ_FechaSecretaria}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="30" y="135" width="130" height="20" forecolor="#006DCA" uuid="03237220-9ea4-4073-bbc4-ab76771c4ecb">
+						<printWhenExpression><![CDATA[$P{CSJ_FechaInicialSecretaria} != null]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Fecha inicial:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="185" y="135" width="376" height="20" uuid="1700f95d-dc46-465e-a98e-74ea312efc72"/>
+					<textFieldExpression><![CDATA[$P{CSJ_FechaInicialSecretaria}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="30" y="160" width="130" height="20" forecolor="#006DCA" uuid="a1583200-b5cf-462e-8e0a-cc9a91dfb9d6">
+						<printWhenExpression><![CDATA[$P{CSJ_FechaFinalSecretaria} != null]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Fecha final]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="184" y="160" width="376" height="20" uuid="348205e8-eaee-48e5-aafc-e3e57824f4fc"/>
+					<textFieldExpression><![CDATA[$P{CSJ_FechaFinalSecretaria}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="70" splitType="Stretch">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="39" y="0" width="532" height="20" forecolor="#FFFFFF" uuid="da5bf948-907e-4759-bf54-54d08bd07596"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rama Judicial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="20" width="532" height="20" forecolor="#FFFFFF" uuid="103ed81e-2955-4e82-9ac8-f1103ffa26e4"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Calle 12 No. 7 - 65 Bogotá Colombia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="40" width="532" height="20" forecolor="#FFFFFF" uuid="6f99a090-8f73-435b-9a04-9e7af546e071"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PBX: (571) 565 85 00 - E-mail: info.cendoj@ramajudicial.gov.co]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

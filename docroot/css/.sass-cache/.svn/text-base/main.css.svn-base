@@ -1,0 +1,54 @@
+.consultaprocesos-portlet .portlet, .consultaprocesos-portlet .portlet-menu {
+  background: #FFF; }
+.consultaprocesos-portlet fieldset, .consultaprocesos-portlet .aui-form fieldset {
+  font-size: 1.091em; }
+.consultaprocesos-portlet fieldset.fieldSet input[type="text"] {
+  background: none repeat scroll 0 0 #FFFFFF;
+  width: 180px; }
+.consultaprocesos-portlet fieldset.fieldSet select.param {
+  background: none repeat scroll 0 0 #FFFFFF;
+  width: 185px; }
+.consultaprocesos-portlet .aui-datepicker-select-wrapper select {
+  background: none repeat scroll 0 0 #FFFFFF; }
+.consultaprocesos-portlet label.aui-field-label {
+  width: 130px;
+  font-weight: normal; }
+.consultaprocesos-portlet input.buttonLink {
+  background: none repeat scroll 0 0 #177ACE !important;
+  font-weight: bold !important; }
+.consultaprocesos-portlet #formBox .aui-tabview-list {
+  background: none repeat scroll 0 0 #177ACE;
+  border: medium none;
+  border-radius: 0;
+  height: 28px; }
+.consultaprocesos-portlet #formBox .aui-tab.aui-state-default, .consultaprocesos-portlet #formBox .aui-tab.aui-state-active {
+  background: transparent none;
+  border: medium none !important;
+  margin: 0 10px; }
+.consultaprocesos-portlet #formBox .aui-tab.aui-state-active {
+  background: transparent url(../images/hover.png) no-repeat 0 0;
+  margin: 3px 10px 0;
+  width: 92px; }
+.consultaprocesos-portlet #formBox .aui-tab-content {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+  border: medium none !important;
+  box-shadow: none !important; }
+.consultaprocesos-portlet #formBox .aui-tab-label {
+  color: #FFFFFF !important;
+  padding: 7px 26px 6px;
+  text-shadow: none !important; }
+.consultaprocesos-portlet #formBox .aui-tab-active .aui-tab-label {
+  padding: 4px 26px 6px; }
+.consultaprocesos-portlet #formBox .aui-tab-label, .consultaprocesos-portlet #formBox .aui-tab-label a, .consultaprocesos-portlet #formBox .aui-tab-active strong {
+  font-weight: bold !important; }
+.consultaprocesos-portlet #formBox .aui-form-validator-error-container, .consultaprocesos-portlet #formBox input.aui-form-validator-error, .consultaprocesos-portlet #formBox textarea.aui-form-validator-error, .consultaprocesos-portlet #formBox select.aui-form-validator-error {
+  color: #C60D0D; }
+.consultaprocesos-portlet #formBox .dateField-content .aui-field-label {
+  color: #006DCA;
+  font-weight: bold; }
+.consultaprocesos-portlet #formBox .dateField-content .aui-icon-calendar {
+  background: transparent url(../images/calendar.png) no-repeat 0 0; }
+.consultaprocesos-portlet #formBox .dateField-content .aui-datepicker-button-wrapper .aui-buttonitem-content {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: medium none; }
+

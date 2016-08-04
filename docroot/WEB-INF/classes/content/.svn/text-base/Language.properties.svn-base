@@ -1,0 +1,23 @@
+
+person=Persona
+company=Empresa
+
+name=Nombre
+name-error-message=Por favor, introduzca s\u00f3lo letras.
+last-name=Apellidos
+cc=C\u00e9dula de Ciudadan\u00eda
+nit=NIT
+email=Email*
+city=Ciudad*
+#choose-city=Seleccione la Ciudad
+specialty=Entidad/Especialidad
+#choose-specialty=Seleccione la Especialidad
+
+date-option=Fechas
+processStartDate=Fecha Inicio Proceso
+actDate=Fecha Actuaci\u00f3n
+date-from=Desde
+date-to=Hasta
+generateReport=Consultar
+
+success-message=La consulta fue recibida correctamente, los resultados los recibir\u00e1 en los pr\u00f3ximos minutos al correo electr\u00f3nico ingresado

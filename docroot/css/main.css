@@ -1,0 +1,98 @@
+.consultaprocesos-portlet {
+	.portlet, .portlet-menu {
+		background: #FFF;
+	}
+	
+	fieldset, .aui-form fieldset {
+		font-size: 1.091em;
+	}
+	
+	fieldset.fieldSet input[type="text"] {
+		background: none repeat scroll 0 0 #FFFFFF;
+		width: 180px;
+	}
+	
+	fieldset.fieldSet select.param {
+		background: none repeat scroll 0 0 #FFFFFF;
+		width: 185px;
+	}
+	
+	.aui-datepicker-select-wrapper select {
+		background: none repeat scroll 0 0 #FFFFFF;
+	}
+	
+	label.aui-field-label {
+		width: 130px;
+		font-weight: normal;
+	}
+	
+	input.buttonLink {
+		background: none repeat scroll 0 0 #177ACE !important;
+		font-weight: bold !important;
+	}
+	
+	#formBox {
+	    .aui-tabview-list {
+			background: none repeat scroll 0 0 #177ACE;
+		    border: medium none;
+		    border-radius: 0;
+		    height: 28px;
+		}
+		
+	    .aui-tab.aui-state-default, .aui-tab.aui-state-active {
+	    	background: transparent none;
+		    border: medium none !important;
+		    margin: 0 10px;
+	    }
+	    
+	    .aui-tab.aui-state-active {
+			background: transparent url(../images/hover.png) no-repeat 0 0;
+			margin: 3px 10px 0;
+    		width: 92px;
+		}
+	    
+		
+		.aui-tab-content {
+		    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+		    border: medium none !important;
+		    box-shadow: none !important;
+		}
+		
+		.aui-tab-label {
+		    color: #FFFFFF !important;
+		    padding: 7px 26px 6px;
+		    text-shadow: none !important;
+		}
+		
+		.aui-tab-active .aui-tab-label {
+			padding: 4px 26px 6px;
+		}
+		
+		.aui-tab-label, .aui-tab-label a, .aui-tab-active strong {
+			font-weight: bold !important;
+		}
+		
+		
+		.aui-form-validator-error-container, input.aui-form-validator-error, textarea.aui-form-validator-error, select.aui-form-validator-error {
+		    color: #C60D0D;
+		}
+		
+		
+		.dateField-content { 
+			.aui-field-label {
+				color: #006DCA;
+				font-weight: bold;
+			}
+			
+			.aui-icon-calendar {
+				background: transparent url(../images/calendar.png) no-repeat 0 0;
+			}
+			
+			.aui-datepicker-button-wrapper .aui-buttonitem-content {
+				background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    			border: medium none;
+			}
+		}
+		
+	}
+}

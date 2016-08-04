@@ -1,0 +1,80 @@
+10
+
+dir
+6642
+http://10.25.7.20/repos/ProyectoCSJ/trunk/consulta-procesos-portlet/docroot
+http://10.25.7.20/repos
+
+
+
+2014-01-08T19:30:12.287692Z
+6642
+T09687
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fffd3c98-5a00-4a27-94de-33cb186e2a94
+
+META-INF
+dir
+
+WEB-INF
+dir
+
+css
+dir
+
+html
+dir
+
+icon.png
+file
+
+
+
+
+2013-12-11T15:01:04.983000Z
+be8150319d9bec0c7c6a58eba0e72e66
+2014-01-08T19:30:12.287692Z
+6642
+T09687
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+467
+
+images
+dir
+
+js
+dir
+
